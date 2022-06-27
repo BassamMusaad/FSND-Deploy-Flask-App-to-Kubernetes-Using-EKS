@@ -33,7 +33,9 @@ spec:
         - name: simple-jwt-api
           image: CONTAINER_IMAGE
           securityContext:
-            securityContext.capabilities.drop: all
+            capabilities:
+               drop:
+                 - all
             privileged: false
             readOnlyRootFilesystem: false
             allowPrivilegeEscalation: false
