@@ -1,4 +1,4 @@
-from python:3.7.13-slim
+from python:3.12.0rc1-slim
 
 COPY . /app
 WORKDIR /app
